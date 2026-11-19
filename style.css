@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Norse bold";
+    font-family: "Norse Bold";
     src: url(./fonts/norse/Norsebold.otf);
 }
 :root{
@@ -15,4 +15,32 @@ body{
 }
 input,button,select,textarea{
     font-family: inherit;
+}
+.main{
+    display: flex;
+    min-height: 100vh;
+}
+.left-container{
+    position: relative;
+    flex-basis: 40vw;
+    background-image: url(./images/hector-o-connor-XSknXjyCVcs-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logo-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top:20%;
+    width: 100%;
+    color: #F9FAFB;
+    font-family: "Norse Bold";
+    font-size: calc(16px + 1.5vw);
+}
+#beagle-logo{
+    height: 2em;
+    width: 2em;
 }
