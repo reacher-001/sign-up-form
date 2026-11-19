@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Norse bold";
+    src: url(./fonts/norse/Norsebold.otf);
+}
+:root{
+    --green:#596D48;
+    --bg-clr:#F9FAFB;
+    --side-bar-clr:#E5E7EB;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+input,button,select,textarea{
+    font-family: inherit;
+}
