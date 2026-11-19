@@ -22,6 +22,8 @@ input,button,select,textarea{
 }
 .left-container{
     position: relative;
+    color: #F9FAFB;
+    height: 100vh;
     flex-basis: 40vw;
     background-image: url(./images/hector-o-connor-XSknXjyCVcs-unsplash.jpg);
     background-size: cover;
@@ -43,4 +45,15 @@ input,button,select,textarea{
 #beagle-logo{
     height: 2em;
     width: 2em;
+}
+#creator-credit{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+}
+a:link, a:visited{
+    color: inherit;
+    text-decoration: none;
 }
