@@ -32,32 +32,72 @@
                 <div class="form-row form-row-one">
                     <div>
                         <label for="fname">FIRST NAME</label>
-                        <input type="text" id="fname" required name="fname">
+                        <input type="text" 
+                        id="fname" 
+                        required name="fname" 
+                        minlength="2" 
+                        maxlength="50"
+                        pattern="^[\p{L}\s'-]{2,50}$">
+                        <span class="error-tip">First name must
+                            be between 2 to 50 characters
+                        </span>
                     </div>
                     <div>
                         <label for="lname">LAST NAME</label>
-                        <input type="text" name="lname" id="lname">
+                        <input type="text" 
+                        name="lname" 
+                        id="lname" 
+                        minlength="2" 
+                        maxlength="50"
+                        pattern="^[\p{L}\s'-]{2,50}$">
+                        <span class="error-tip">Last name must
+                            be between 2 to 50 characters
+                        </span>
                     </div>
                 </div>
                 <div class="form-row form-row-two">
                     <div>
                         <label for="email">EMAIL(optional)</label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" 
+                        id="email" 
+                        name="email">
                     </div>
                     <div>
                         <label for="ph-no">PHONE NUMBER</label>
-                        <input type="tel" name="ph_no" id="ph-no">
+                        <input type="tel" 
+                        name="ph_no" 
+                        id="ph-no"
+                        required>
+                        <span class="error-tip">Phone number must follow the format
+                            +91 98765 43210 or (555) 123-4567
+                        </span>
                     </div>
                     
                 </div>
                 <div class="form-row form-row-three">
                     <div>
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="pass" required>
+                        <input type="password" 
+                        id="password" 
+                        name="pass" 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}"
+                        required>
+                        <span class="error-tip">Password must contain alteast 8 characters and
+                            alteast have 1 number, 1 upper and 1 lower case character
+                            and 1 special character   
+                        </span>
                     </div>
                     <div>
                         <label for="cnf-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="cnf_pass" id="cnf-password">
+                        <input type="password" 
+                        name="cnf_pass" 
+                        id="cnf-password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}"
+                        required>
+                        <span class="error-tip">Password must contain alteast 8 characters and
+                            alteast have 1 number, 1 upper and 1 lower case character
+                            and 1 special character   
+                        </span>
                     </div>
                 </div>
             </form>

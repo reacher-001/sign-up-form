@@ -27,7 +27,7 @@ input,button,select,textarea{
     position: relative;
     color: #F9FAFB;
     height: 100vh;
-    flex-basis: 40vw;
+    flex:0 0 40%;
     background-image: url(./images/hector-o-connor-XSknXjyCVcs-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -101,4 +101,62 @@ form>legend{
 .form-row>div{
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+form#sign-up label{
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+input{
+    outline: none;
+    border:1px solid black;
+    border-radius: 8px;
+    padding: 0.4rem;
+}
+input:focus{
+    outline:none;
+    border: 1px solid rgb(28, 28, 239);
+    box-shadow: 0 2px 8px grey;
+}
+input:user-invalid{
+    border-color: #dc2626;
+    background-color: #fef2f2;
+}
+.error-tip{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 6px;
+    padding: 8px 12px;
+    background-color: #1f2937;
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    pointer-events: none;
+}
+input:user-invalid:hover + .error-tip{
+    display: block;
+}
+/*footer*/
+.footer>button{
+    margin: 1.5rem;
+    margin-left:2.5rem;
+    padding: 0.6rem 2.5rem;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px #b6b5b5;
+    background-color: #596D48;
+    color: #F9FAFB;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.footer>p{
+    margin-left: 2.5rem;
+}
+.footer>p>a{
+    color: #596D48;
+    font-weight: 700;
 }
