@@ -13,9 +13,59 @@
                 <img id="beagle-logo" src="./images/icons8-beagle-100.png" alt="Beagle logo">
                 <p id="logo-text">Beagle Owner's Assossiation</p>
             </div>
-            <span id="creator-credit">Photo on <a href="https://icons8.com/icons/set/beagle">Icons8</a></span>
+            <span id="creator-credit">
+                Photo on <a href="https://icons8.com/icons/set/beagle">Icons8</a>
+            </span>
         </div>
-        <div class="right-container"></div>
+        <div class="right-container">
+            <header class="header">
+                <p>
+                    This is a forum for Beagle owners accross the world. 
+                    We share important news, updates, gossips related to the dog community
+                    in general and specifically beagles. Feel free to sign up below
+                    and become a member of this global community. 
+                </p> 
+                <p>You <em>know</em> you want to.</p>
+            </header>
+            <form id="sign-up" action="" method="post">
+                <legend>Let'd Beagle Up!!</legend>
+                <div class="form-row form-row-one">
+                    <div>
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" required name="fname">
+                    </div>
+                    <div>
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                </div>
+                <div class="form-row form-row-two">
+                    <div>
+                        <label for="email">EMAIL(optional)</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="ph-no">PHONE NUMBER</label>
+                        <input type="tel" name="ph_no" id="ph-no">
+                    </div>
+                    
+                </div>
+                <div class="form-row form-row-three">
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="pass" required>
+                    </div>
+                    <div>
+                        <label for="cnf-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="cnf_pass" id="cnf-password">
+                    </div>
+                </div>
+            </form>
+            <footer class="footer">
+                <button type="submit" form="sign-up">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
